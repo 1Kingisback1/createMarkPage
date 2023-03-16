@@ -1,0 +1,77 @@
+.domen__block {
+    margin-top: 50px;
+    & .title__domen {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #343434;
+        margin-bottom: 7px;
+    }
+    & .createDomen__name {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+
+        & .input__block {
+            & input {
+                width: calc(567px - 150px);
+                height: 36px;
+                background-color: #E6E6E9;
+                
+                border: none;
+                border-radius: 3px;
+                outline: none;
+            }
+
+            & input[placeholder="Например: ivangrozniy"] {
+                padding-left: 14px;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 21px;
+                font-family: inherit;
+            }
+            & input:focus {
+                border: none;
+            }
+        }
+        & .hostname__block {
+            width: 151px;
+            height: 36px;
+            background-color: #6666CC;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -15px;
+            & span { 
+                color: #fff;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 21px;
+            }
+        }
+    }
+    & .taboo__block {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        margin-top: 27px;
+        gap: 16px;
+        & .Info__taboo {
+            color: #7D7D7D;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            font-family: inherit;
+            text-align: justify;
+
+            & .link__info-taboo {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

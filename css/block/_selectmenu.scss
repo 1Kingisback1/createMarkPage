@@ -1,0 +1,193 @@
+.content__info {
+    position: relative;
+}
+.popup__container {
+    opacity: 0;
+    transition: opacity .1s linear;
+    display: block;
+    box-sizing: border-box;
+    max-width: 620px;
+    width: 100%;
+    padding: 37px 30px 17px 30px;
+    border-radius: 5px;
+
+    background: #fff;
+    box-shadow: 0px 30px 38px rgba(37, 37, 37, 0.1);
+
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 99;
+    
+
+    .popup__header {
+        display: flex;
+        justify-content: space-between;
+        & h3 {
+            font-weight: 500;
+            font-size: 20px;
+        }
+        & span {
+            width: 17px;
+            height: 17px;
+            border: 1px #000 solid;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+    .popup__content {
+        margin-top: 48px;
+        .seting__block {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 80px;
+            & .seting__sb {
+                max-width: 100%;
+                width: 100%;
+                & .title__sb {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    font-weight: 500;
+
+                }
+                & .dropdown__container {
+                    position: relative;
+                    & .dropdown__btnSb {
+                        width: 100%;
+                        height: 39px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 15px;
+                        line-height: 21px;
+                        border: 1px solid #CDCDCD;
+                        background-color: #fff;
+                        color: #7D7D7D;
+                        border-radius: 5px;
+                        padding: 15px;
+                        & .arrow {
+                            cursor: pointer;
+                            transition: transform .8s linear;                  
+                        }
+
+                    }
+
+                    & .dropdown__list {
+                        display: none;
+                        overflow: hidden;
+                        list-style: none;
+                        border: #CDCDCD 1px solid;
+                        border-radius: 5px;
+                        max-width: 100%;
+                        width: 100%;
+                        background-color: #fff;
+                        
+                        position: absolute;
+                        top:39px;
+                        left: 0;
+                        z-index: 3;
+                        animation: dropdownAnim .8s linear;
+                        -webkit-animation: dropdownAnim .8s linear;
+                        -moz-animation: dropdownAnim .8s linear;
+                        -o-animation: dropdownAnim .8s linear;
+                        
+                        & li {
+                            cursor: pointer;
+                            padding: 10px 15px;
+                            max-height: 39px;
+                            color: #7D7D7D;
+
+                            &:hover {
+                                background: #6666cca8;
+                                color: #000;
+                            }
+                        }
+                        
+                    }
+                }
+                
+            }
+            & .seting__color {
+                max-width: 100%;
+                width: 100%;
+                & .title__color {
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+
+                & .dropdown__container {
+                    position: relative;
+                    & .dropdown__btnCol {
+                        width: 100%;
+                        height: 39px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 15px;
+                        line-height: 21px;
+                        border: 1px solid #CDCDCD;
+                        background-color: #fff;
+                        color: #7D7D7D;
+                        border-radius: 5px;
+                        padding: 15px;
+                        & .arrowColor {
+                            cursor: pointer;
+                            transition: transform .8s linear;                  
+                        }
+
+                    }
+                    & .dropdown__list-color {
+                        display: none;
+                        overflow: hidden;
+                        list-style: none;
+                        border: #CDCDCD 1px solid;
+                        border-radius: 5px;
+                        max-width: 100%;
+                        width: 100%;
+                        background-color: #fff;
+                        
+                        position: absolute;
+                        top:39px;
+                        left: 0;
+                        z-index: 3;
+                        animation: dropdownAnim .8s linear;
+                        -webkit-animation: dropdownAnim .8s linear;
+                        -moz-animation: dropdownAnim .8s linear;
+                        -o-animation: dropdownAnim .8s linear;
+                        
+                        & li {
+                            cursor: pointer;
+                            padding: 10px 15px;
+                            max-height: 39px;
+                            color: #7D7D7D;
+
+                            &:hover {
+                                background: #6666cca8;
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
+
+@keyframes dropdownAnim {
+    0% {
+        height: 0%;
+    }
+    50% {
+        height: 50% * 4;
+    }
+    100% {
+        height: 100% * 4;
+    }
+}
